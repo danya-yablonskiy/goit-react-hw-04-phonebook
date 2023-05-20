@@ -47,7 +47,6 @@ export const App = () => {
     const filterId = contacts.filter(contact => contact.id !== id);
     setContacts([...filterId]);
   };
-
   return (
     <div>
       <h1>Phonebook</h1>
