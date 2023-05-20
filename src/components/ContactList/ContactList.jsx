@@ -5,7 +5,7 @@ export const ContactList = ({ onClick, contacts, filter }) => {
   );
   return (
     <List>
-      {filterName.map(contact => (
+      {filterName && filterName.map(contact => (
         <ListItem key={contact.id}>
           <p>
             {contact.name}: {contact.number}
